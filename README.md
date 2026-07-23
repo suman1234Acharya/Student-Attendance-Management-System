@@ -1,248 +1,317 @@
 # 🎓 Student Attendance Management System
 
-A modern, web-based **Student Attendance Management System** developed using **PHP, MySQL, HTML, CSS, JavaScript, and Bootstrap**. The system helps schools and colleges manage students, teachers, classes, and attendance records efficiently through secure role-based access.
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python" />
+  <img src="https://img.shields.io/badge/Streamlit-Web%20Application-FF4B4B?style=for-the-badge&logo=streamlit" />
+  <img src="https://img.shields.io/badge/OpenCV-Face%20Recognition-5C3EE8?style=for-the-badge&logo=opencv" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-Attendance%20Automation-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+</p>
 
 ---
 
-## 📖 Overview
+# 📖 Overview
 
-The Student Attendance Management System automates the process of recording and monitoring student attendance. It provides separate dashboards for administrators and teachers, making attendance management simple, secure, and efficient.
+**Student Attendance Management System** is an AI-powered attendance solution that automates student attendance using **Face Recognition**, **Computer Vision**, and **Machine Learning**. The system identifies students through a webcam, records attendance automatically, and stores attendance records efficiently.
 
----
-
-## ✨ Features
-
-### 👨‍💼 Admin Module
-- Secure Admin Login
-- Dashboard with Statistics
-- Student Management (Add, Edit, Delete)
-- Teacher Management
-- Class Management
-- Attendance Monitoring
-- Attendance Reports
-- Change Password
-- Logout
-
-### 👨‍🏫 Teacher Module
-- Secure Teacher Login
-- Dashboard
-- Take Attendance
-- View Attendance History
-- Student List
-- Attendance Reports
-- Update Profile
-- Change Password
-- Logout
+This project reduces manual attendance errors, saves time, and provides an easy-to-use interface for educational institutions.
 
 ---
 
-## 🛠️ Technologies Used
+# 🎯 Objectives
 
-| Technology | Purpose |
-|------------|---------|
-| PHP | Backend Development |
-| MySQL | Database |
-| HTML5 | Structure |
-| CSS3 | Styling |
-| Bootstrap 5 | Responsive UI |
-| JavaScript | Client-side Functionality |
-| XAMPP | Local Server |
+- Automate student attendance using facial recognition.
+- Eliminate manual attendance processes.
+- Improve attendance accuracy.
+- Store attendance records securely.
+- Generate attendance reports.
+- Provide a user-friendly interface for teachers and administrators.
 
 ---
 
-## 📁 Project Structure
+# ✨ Features
 
-```text
+- 🎥 Real-Time Face Detection
+- 😊 Face Recognition-Based Attendance
+- 👨‍🎓 Student Registration
+- 📅 Automatic Attendance Logging
+- 📊 Attendance Reports
+- 📂 Student Database Management
+- 📈 Dashboard for Attendance Analysis
+- 🔒 Secure Data Storage
+- ⚡ Fast and Accurate Recognition
+
+---
+
+# 🛠️ Technologies Used
+
+- Python
+- Streamlit
+- OpenCV
+- NumPy
+- Pandas
+- Scikit-learn
+- Face Recognition
+- SQLite / CSV (depending on implementation)
+
+---
+
+# 🧠 System Workflow
+
+```
+Student Registration
+         │
+         ▼
+ Capture Face Images
+         │
+         ▼
+ Face Encoding
+         │
+         ▼
+ Store Face Data
+         │
+         ▼
+ Live Webcam Detection
+         │
+         ▼
+ Face Recognition
+         │
+         ▼
+ Mark Attendance
+         │
+         ▼
+ Save Attendance Record
+```
+
+---
+
+# 📂 Project Structure
+
+```
 Student-Attendance-Management-System/
 │
-├── Admin/
-│   ├── dashboard.php
-│   ├── manage_students.php
-│   ├── manage_teachers.php
-│   ├── manage_classes.php
-│   ├── attendance.php
-│   └── attendance_report.php
-│
-├── ClassTeacher/
-│   ├── dashboard.php
-│   ├── take_attendance.php
-│   ├── attendance_history.php
-│   ├── reports.php
-│   └── profile.php
-│
-├── css/
-├── js/
-├── img/
-├── Database/
-│   └── attendance.sql
-│
-├── connection.php
-├── login.php
-├── logout.php
-├── index.php
+├── app.py
+├── train_model.py
+├── attendance.csv
+├── students/
+├── dataset/
+├── models/
+├── images/
+├── requirements.txt
 ├── README.md
-├── LICENSE
-└── .gitignore
+└── LICENSE
 ```
 
 ---
 
-## 💾 Database
+# 📋 Modules
 
-Create a database named:
+### 👨‍🎓 Student Registration
+- Add new students
+- Capture face images
+- Generate face encodings
 
-```sql
-attendance
-```
+### 🎥 Face Recognition
+- Detect faces in real time
+- Match with registered students
+- Display recognized student details
 
-Import the SQL file located in:
+### 📅 Attendance Management
+- Automatically mark attendance
+- Record date and time
+- Prevent duplicate attendance entries
 
-```
-Database/attendance.sql
-```
+### 📊 Reports
+- Daily attendance reports
+- Student-wise attendance history
+- Export attendance records
 
 ---
 
-## ⚙️ Installation
+# 🤖 Machine Learning Workflow
 
-### 1. Clone the Repository
+1. Data Collection
+2. Face Image Preprocessing
+3. Face Encoding
+4. Model Training
+5. Face Detection
+6. Face Recognition
+7. Attendance Recording
+8. Report Generation
+
+---
+
+# 📊 Key Features
+
+- ✅ Face Detection
+- ✅ Face Recognition
+- ✅ Real-Time Attendance
+- ✅ Attendance Analytics
+- ✅ Student Management
+- ✅ CSV/Database Storage
+- ✅ Dashboard
+- ✅ Report Export
+
+---
+
+# 🚀 Installation
+
+## Clone the Repository
 
 ```bash
-git clone https://github.com/Suman Acharya/Student-Attendance-Management-System.git
+git clone https://github.com/suman1234Acharya/Student-Attendance-Management-System.git
 ```
 
-### 2. Move Project
+## Navigate to the Project
 
-Copy the project folder into:
-
-```
-C:\xampp\htdocs\
+```bash
+cd Student-Attendance-Management-System
 ```
 
-### 3. Start XAMPP
+## Install Required Packages
 
-Start:
-
-- Apache
-- MySQL
-
-### 4. Create Database
-
-Open:
-
-```
-http://localhost/phpmyadmin
-```
-
-Create database:
-
-```
-attendance
-```
-
-Import:
-
-```
-Database/attendance.sql
-```
-
-### 5. Run the Project
-
-Open:
-
-```
-http://localhost/Student-Attendance-Management-System/
+```bash
+pip install -r requirements.txt
 ```
 
 ---
 
-## 🔐 Default Login
+# ▶️ Run the Application
 
-### Admin
-
-```
-Username: admin
-Password: admin123
+```bash
+streamlit run app.py
 ```
 
-### Teacher
+or
 
-```
-Username: teacher
-Password: teacher123
+```bash
+python app.py
 ```
 
-> **Note:** Update these credentials according to your database.
+(depending on your project setup)
 
 ---
 
-## 📸 Screenshots
+# 💻 Example Output
 
-### Login Page
+```
+✔ Face Detected
 
-<img src="Screenshots/login.png" width="800">
+Student:
+John Doe
 
-### Admin Dashboard
+Attendance:
+Marked Successfully
 
-<img src="Screenshots/admin_dashboard.png" width="800">
+Date:
+2026-07-23
 
-### Teacher Dashboard
-
-<img src="Screenshots/teacher_dashboard.png" width="800">
-
-### Attendance Page
-
-<img src="Screenshots/attendance.png" width="800">
-
----
-
-## 🚀 Future Improvements
-
-- Email Notifications
-- QR Code Attendance
-- Face Recognition Attendance
-- SMS Alerts
-- Export Reports to PDF & Excel
-- Cloud Database Support
-- Student Portal
-- Parent Portal
+Time:
+09:15 AM
+```
 
 ---
 
-## 🤝 Contributing
+# 📊 Visualizations
 
-Contributions are welcome.
+The project may include:
 
-1. Fork the repository.
-2. Create a new branch.
+- 📈 Attendance Dashboard
+- 👨‍🎓 Student List
+- 📅 Attendance Calendar
+- 📊 Attendance Statistics
+- 🎥 Live Webcam Recognition
+- 📉 Attendance Trends
+
+---
+
+# 📷 Screenshots
+
+Add screenshots for:
+
+- Home Dashboard
+- Student Registration
+- Face Recognition
+- Attendance Report
+- Live Camera Detection
+
+Example:
+
+```
+images/dashboard.png
+```
+
+---
+
+# 📚 Future Enhancements
+
+- 🌐 Web-Based Admin Panel
+- ☁️ Cloud Database Integration
+- 📱 Mobile Attendance App
+- 📧 Email Notifications
+- 📥 Excel/PDF Report Export
+- 🧠 Deep Learning Face Recognition
+- 🌍 Multi-Camera Support
+- 🔐 Role-Based Authentication
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork this repository.
+
+2. Create a new feature branch.
+
+```bash
+git checkout -b feature/NewFeature
+```
+
 3. Commit your changes.
+
+```bash
+git commit -m "Add new feature"
+```
+
 4. Push the branch.
+
+```bash
+git push origin feature/NewFeature
+```
+
 5. Open a Pull Request.
 
 ---
 
-## 📄 License
+# 👨‍💻 Author
 
-This project is licensed under the MIT License.
+**Shibnath Rana**
 
----
+💻 GitHub  
+https://github.com/shibnath31
 
-## 👨‍💻 Author
+🌐 Portfolio  
+https://github.com/shibnath31/myportfolio
 
-**Suman Acharya**
-
-- 🎓 MCA Student
-- 💻 Software Developer
-- 📊 Data Analyst
-
-### Connect with Me
-
-- GitHub: https://github.com/suman1234Acharya
-- LinkedIn: https://www.linkedin.com/
-- Email: your-email@example.com
+📧 Email  
+your-email@example.com
 
 ---
 
-## ⭐ Support
+# ⭐ Show Your Support
 
-If you found this project helpful, please consider giving it a ⭐ on GitHub!
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub. Your support helps encourage further development and future open-source projects.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<p align="center">
+  <strong>Made with ❤️ using Python, Streamlit, OpenCV, and Machine Learning</strong><br><br>
+  ⭐ <strong>If you like this project, don't forget to star the repository!</strong> ⭐
+</p>
