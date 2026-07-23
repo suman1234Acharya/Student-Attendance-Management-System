@@ -108,7 +108,7 @@ Database/attendance.sql
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/Student-Attendance-Management-System.git
+git clone https://github.com/Suman Acharya/Student-Attendance-Management-System.git
 ```
 
 ### 2. Move Project
